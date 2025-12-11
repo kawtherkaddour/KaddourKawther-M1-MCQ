@@ -18,3 +18,9 @@ print("******************** Création et Affichage ********************")
 # Affichage de tableau 
 print("Tableau des séquence d'ADN:")
 print(df)
+
+# Opérations sur les tableaux :
+print("************** Operations **************")
+#1) Sélectionner la colonne "Longueur"
+Longueur = df["Longueur"]
+print(Longueur) 
