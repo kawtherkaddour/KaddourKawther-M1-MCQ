@@ -56,7 +56,11 @@ std_length = df["Longueur"].std()
 print("écart-type du %GC :", std_gc)
 print("écart-type de la Longueur : ", std_length)
 
-#8) Télécharger un fichier CSV et le mettre dans un Dataframe 
+#8)Sauvegarde et chargement des données avec panda 
+# Sauvegarder le DataFrame dans un fichier CSV 
+df.to_csv("tableau_sequences.csv",index=False)
+
+#Télécharger un fichier CSV et le mettre dans un Dataframe 
 # Chargé un fichier CSV dans Dataframe 
 #df_loaded=pd.read_csv("tableau_sequences.csv")
 #print(df_loaded) 
