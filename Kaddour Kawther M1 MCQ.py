@@ -61,6 +61,6 @@ print("écart-type de la Longueur : ", std_length)
 df.to_csv("tableau_sequences.csv",index=False)
 
 #Télécharger un fichier CSV et le mettre dans un Dataframe 
-# Chargé un fichier CSV dans Dataframe 
+#chargé un fichier CSV dans Dataframe 
 #df_loaded=pd.read_csv("tableau_sequences.csv")
 #print(df_loaded) 
