@@ -40,7 +40,7 @@ print(f"Pourcentage moyen de GC: {average_gc:.3f}%","\n\n")
 #5) Ajouter une nouvelle colonne avec des calculs
 print("********** Ajouter d'une nouvelle colonne **********")
 # Ajouter une nouvelle colonne " Catégorie GC "
-df["Catégorie GC"] = df["Pourcentage_GC"] .apply(lambda x: "Rich" if x > 55 else "Moyen" if 45 ≤ x <= 55 else "Faible" if x < 45)
+df["Catégorie GC"] = df["Pourcentage_GC"] .apply(lambda x: "Rich" if x > 55 else "Moyen" if 45 <= x <= 55 else "Faible" if x < 45)
 print(df["Catégorie GC"],"\n\n")
 
 #6) Ajouter une colonne donnant le nombre de 'G' dans chaque séquence :
