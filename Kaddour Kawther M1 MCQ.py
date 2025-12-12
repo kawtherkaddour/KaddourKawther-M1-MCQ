@@ -15,13 +15,13 @@ data = {
 # Création d'un Dataframe ( Tableau pandas )
 df= pd.Dataframe(data)
 print("******************** Création et Affichage ********************") 
-# Affichage de tableau 
+#1)Affichage de tableau 
 print("Tableau des séquence d'ADN:")
 print(df)
 
 # Opérations sur les tableaux :
 print("************** Operations **************")
-#1) Sélectionner la colonne "Longueur"
+#2) Sélectionner la colonne "Longueur"
 Longueur = df["Longueur"]
 print(Longueur) 
 
@@ -37,7 +37,7 @@ print("********************Calcul de la moyenne********************")
 average_gc = df["Pourcentage GC"].mean()
 print(f"Pourcentage moyen de GC: {average _gc:.3f}%","\n\n")
 
-#5 ) Ajouter une nouvelle colonne avec des calculs
+#5) Ajouter une nouvelle colonne avec des calculs
 Print("********** Ajouter d'une nouvelle colonne **********")
 # Ajouter une nouvelle colonne " Catégorie GC "
 df["Catégorie GC"] = df["Pourcentage GC"] .apply(lambda x: "Rich" if x > 55 else "Moyen" if 45 ≤ x ≥ 55 else "Faible" if x < 45)
