@@ -47,3 +47,9 @@ print("************* Ajouter d'une nouvelle colonne*****************)
 # Ajouter une nouvelle colonne " nombre de 'G'
       df['nb_G'] = df['Séquence'].str.count('G')
 print(df["nb_G"])
+
+#7) Calcul de l'écart-type du %GC et de la longueur
+# Ecart-type du pourcentage de GC
+std_gc = df["Pourcentage_GC"].std()
+# Ecart-type de la longueur des séquences
+std_length = df["Longueur"].std()
