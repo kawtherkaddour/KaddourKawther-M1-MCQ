@@ -61,6 +61,8 @@ print("écart-type de la Longueur : ", std_length,"\n\n")
 #8)Sauvegarde et chargement des données avec panda 
 # Sauvegarder le DataFrame dans un fichier CSV 
 df.to_csv("tableau_sequences.csv",index=False)
+print("************* Tableau final*************")
+print(df)
 
 #Télécharger un fichier CSV et le mettre dans un Dataframe 
 #chargé un fichier CSV dans Dataframe 
