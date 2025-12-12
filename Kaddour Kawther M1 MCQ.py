@@ -1,4 +1,4 @@
-# Kaddour Kawther 
+ # Kaddour Kawther 
  # Microbiologie et controle de qualité... 11/12/2025
  # Membres de projet :
  #                    - Kawther Kaddour 
@@ -40,7 +40,7 @@ print(f"Pourcentage moyen de GC: {average_gc:.3f}%","\n\n")
 #5) Ajouter une nouvelle colonne avec des calculs
 print("********** Ajouter d'une nouvelle colonne **********")
 # Ajouter une nouvelle colonne " Catégorie GC "
-df["Catégorie GC"] = df["Pourcentage GC"] .apply(lambda x: "Rich" if x > 55 else "Moyen" if 45 <= x <= 55 else "Faible" if x < 45)
+df["Catégorie GC"] = df["Pourcentage GC"] .apply(lambda x: "Rich" if x > 55 else "Moyen" if 45 ≤ x <= 55 else "Faible" if x < 45)
 print(df["Catégorie GC"])
 #6) Ajouter une colonne donnant le nombre de 'G' dans chaque séquence :
 print("************* Ajouter d'une nouvelle colonne*****************) 
@@ -56,5 +56,5 @@ std_length = df["Longueur"].std()
 print("écart-type du %GC :", std_gc)
 print("écart-type de la Longueur : ", std_length)
 
-
-
+#8) Télécharger un fichier CSV et le mettre dans un Dataframe 
+# Chargé un fichier CSV dans Dataframe 
