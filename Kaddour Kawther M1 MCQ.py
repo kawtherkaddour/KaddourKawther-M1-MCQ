@@ -6,14 +6,14 @@
  #                    - Guennoun Amel 
  #                    - Nmiche Imane 
  #                    - Zemmour Khadidja 
- import pandas as pd 
-# Données : Séquences ADN, Longueur, Porcentage de GC
+import pandas as pd 
+ # Données : Séquences ADN, Longueur, Porcentage de GC
 data = { 
-"Séquence": ["ATGCGTACGTA","GCTAGCTAGGCC","ATGCGCGTAAGT","TACGATCGTA","ATGAAAGGCTT","CGTACGTAGC","TTAACCGGAT"],
+ "Séquence": ["ATGCGTACGTA","GCTAGCTAGGCC","ATGCGCGTAAGT","TACGATCGTA","ATGAAAGGCTT","CGTACGTAGC","TTAACCGGAT"],
  "Longueur":[12,12,12,10,11,10,10],
- "Porcentage_GC":[50,66.67,58.33,40,45.45,60,50]
+ "Pourcentage_GC":[50,66.67,58.33,40,45.45,60,50]
  } 
-# Création d'un Dataframe ( Tableau pandas )
+# Création d'un DataFrame ( Tableau pandas )
 df= pd.DataFrame(data)
 print("******************** Création et Affichage ********************") 
 #1)Affichage de tableau 
@@ -41,7 +41,7 @@ print(f"Pourcentage moyen de GC: {average_gc:.3f}%","\n\n")
 #5) Ajouter une nouvelle colonne avec des calculs
 print("********** Ajouter d'une nouvelle colonne **********")
 # Ajouter une nouvelle colonne " Catégorie GC "
-df["Catégorie_GC"] = df["Pourcentage_GC"] .apply(lambda x: "Rich" if x > 55 else "Moyen" if 45 <= x <= 55 else "Faible" if x < 45)
+df["Catégorie_GC"] = df["Pourcentage_GC"] .apply(lambda x: "Rich" if x > 55 else "Moyen" if 45 <= x <= 55 else "Faible")
 print(df["Catégorie_GC"],"\n\n")
 
 #6) Ajouter une colonne donnant le nombre de 'G' dans chaque séquence :
