@@ -47,7 +47,7 @@ print(df["Catégorie_GC"],"\n\n")
 #6) Ajouter une colonne donnant le nombre de 'G' dans chaque séquence :
 print("************* Ajouter d'une nouvelle colonne*****************") 
 # Ajouter une nouvelle colonne " nombre de 'G'
-      df['nb_G'] = df['Séquence'].str.count('G')
+df['nb_G'] = df['Séquence'].str.count('G')
 print(df["nb_G"],"\n\n")
 
 #7) Calcul de l'écart-type du %GC et de la longueur
