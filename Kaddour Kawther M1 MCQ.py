@@ -13,7 +13,7 @@ data = {
  "Longueur":[12,12,12,10,11,10,10],"Porcentage de GC":[50,66.67,58.33,40,45.45,60,50]
  } 
 # Création d'un Dataframe ( Tableau pandas )
-df= pd.Dataframe(data)
+df= pd.DataFrame(data)
 print("******************** Création et Affichage ********************") 
 #1)Affichage de tableau 
 print("Tableau des séquence d'ADN:")
