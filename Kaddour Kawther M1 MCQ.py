@@ -35,16 +35,15 @@ print(filtered_df)
 print("********************Calcul de la moyenne********************")
 # Calculer la moyenne du pourcentage de GC
 average_gc = df["Pourcentage GC"].mean()
-print(f"Pourcentage moyen de GC: {average _gc:.3f}%","\n\n")
+print(f"Pourcentage moyen de GC: {average_gc:.3f}%","\n\n")
 
 #5) Ajouter une nouvelle colonne avec des calculs
 print("********** Ajouter d'une nouvelle colonne **********")
 # Ajouter une nouvelle colonne " Catégorie GC "
-df["Catégorie GC"] = df["Pourcentage GC"] .apply(lambda x: "Rich" if x > 55 else "Moyen" if 45 ≤ x ≥ 55 else "Faible" if x < 45)
-
+df["Catégorie GC"] = df["Pourcentage GC"] .apply(lambda x: "Rich" if x > 55 else "Moyen" if 45 <= x <= 55 else "Faible" if x < 45)
+print(df["Catégorie GC"])
 #6) Ajouter une colonne donnant le nombre de 'G' dans chaque séquence :
 print("************* Ajouter d'une nouvelle colonne*****************) 
 # Ajouter une nouvelle colonne " nombre de 'G'
-      df['nb_G'] = df['Séquance'].str.count('G')
-print(nombre de G) 
-
+      df['nb_G'] = df['Séquence'].str.count('G')
+print(df["nb_G"])
