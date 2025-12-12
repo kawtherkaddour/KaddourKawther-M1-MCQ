@@ -23,7 +23,7 @@ print(df)
 print("************** Operations **************")
 #2) Sélectionner la colonne "Longueur"
 Longueur = df["Longueur"]
-print(Longueur) 
+print(Longueur,"n\n") 
 
 #3)Filtrer les séquences dont la Longueur est supérieur à 10
 print("*************Filtrage dont la Longueur est supérieur > 10 *************")
@@ -41,12 +41,13 @@ print(f"Pourcentage moyen de GC: {average_gc:.3f}%","\n\n")
 print("********** Ajouter d'une nouvelle colonne **********")
 # Ajouter une nouvelle colonne " Catégorie GC "
 df["Catégorie GC"] = df["Pourcentage GC"] .apply(lambda x: "Rich" if x > 55 else "Moyen" if 45 ≤ x <= 55 else "Faible" if x < 45)
-print(df["Catégorie GC"])
+print(df["Catégorie GC"],"n\n")
+
 #6) Ajouter une colonne donnant le nombre de 'G' dans chaque séquence :
 print("************* Ajouter d'une nouvelle colonne*****************) 
 # Ajouter une nouvelle colonne " nombre de 'G'
       df['nb_G'] = df['Séquence'].str.count('G')
-print(df["nb_G"])
+print(df["nb_G"],"n\n")
 
 #7) Calcul de l'écart-type du %GC et de la longueur
 # Ecart-type du pourcentage de GC
@@ -54,7 +55,7 @@ std_gc = df["Pourcentage_GC"].std()
 # Ecart-type de la longueur des séquences
 std_length = df["Longueur"].std()
 print("écart-type du %GC :", std_gc)
-print("écart-type de la Longueur : ", std_length)
+print("écart-type de la Longueur : ", std_length,"n\n")
 
 #8)Sauvegarde et chargement des données avec panda 
 # Sauvegarder le DataFrame dans un fichier CSV 
@@ -62,5 +63,5 @@ df.to_csv("tableau_sequences.csv",index=False)
 
 #Télécharger un fichier CSV et le mettre dans un Dataframe 
 #chargé un fichier CSV dans Dataframe 
-#df_loaded=pd.read_csv("tableau_sequences.csv")
+#df_loaded = pd.read_csv("tableau_sequences.csv")
 #print(df_loaded) 
