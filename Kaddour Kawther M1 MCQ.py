@@ -53,3 +53,7 @@ print(df["nb_G"])
 std_gc = df["Pourcentage_GC"].std()
 # Ecart-type de la longueur des séquences
 std_length = df["Longueur"].std()
+print("écart-type du %GC :", std_gc)
+print("écart-type de la Longueur : ", std_length)
+
+
