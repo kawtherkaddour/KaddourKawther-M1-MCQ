@@ -46,5 +46,5 @@ df["Catégorie GC"] = df["Pourcentage GC"] .apply(lambda x: "Rich" if x > 55 els
 print("************* Ajouter d'une nouvelle colonne*****************) 
 # Ajouter une nouvelle colonne " nombre de 'G'
       df['nb_G'] = df['Séquance'].str.count('G')
-print(df) 
+print(nombre de G) 
 
